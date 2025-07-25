@@ -1,0 +1,21 @@
+syntax on
+set number
+" set cursorline
+" set cursorcolumn
+
+set tabstop=4
+set nowrap
+set ignorecase
+set showmode
+set hlsearch
+
+set wildmenu
+set wildmode=list:longest
+set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
+
+call plug#begin('~/.config/vim/plugged')
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+call plug#end()
+
+set termguicolors
+colorscheme catppuccin_mocha
